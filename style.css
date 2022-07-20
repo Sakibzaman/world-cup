@@ -15,10 +15,11 @@ body {
   border-radius: 20px;
 }
 .top-banner-title {
-  width: 50%;
+  width: 45%;
   /* border: 2px solid yellow; */
   padding: 60px 40px 80px 80px;
 }
+
 .top-banner-title a {
   text-decoration: none;
   font-weight: 550;
@@ -30,33 +31,74 @@ body {
 .top-banner-title h1 {
   font-size: 55px;
   font-weight: 900;
-  margin: 0 40px 0 0;
+  /* margin: 0 40px 0 0; */
 }
 .top-banner-image {
-  width: 50%;
+  width: 45%;
   margin: 0 auto;
+
   /* border: 2px solid red; */
 }
 .top-banner-image img {
   height: 100%;
 }
 .blogs-menu {
+  display: flex;
+  justify-content: center;
+}
+.cards-container {
+  margin-left: 50px;
   display: grid;
-  grid-template-columns: 200px, repeat(3, 1fr);
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
-/* .menu-card {
-  width: 25%;
+
+.menu {
+  height: 200px;
+  width: 250px;
+  display: grid;
+  justify-content: center;
+
   background-color: black;
-  border-radius: 5px;
+  padding: 20px 0;
+  border-radius: 10px;
+  margin-right: 48px;
 }
-.menu-card a {
-  padding: 10px 20px;
-  text-align: center;
+.menu button {
+  height: 50px;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 15px 30px;
+}
+.menu a {
+  font-size: 17px;
+  color: black;
   text-decoration: none;
-  border: 1px solid red;
+  font-weight: 600;
+}
+#red-button {
+  background-color: rgba(255, 0, 0, 0.799);
+  margin-bottom: 0;
+}
+#red-button a {
   color: white;
-  border-radius: 5px;
-} */
+}
+.blogs-menu {
+  display: grid;
+  grid-template-columns: 20% repeat(3, 1fr);
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.blog {
+  margin: 0 auto;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
 footer {
   height: 300px;
   background-color: black;
@@ -73,43 +115,37 @@ footer h1 {
   justify-content: space-around;
   color: white;
 }
-.menu {
-  display: grid;
-  justify-content: center;
-  width: 20%;
-  background-color: black;
-  padding: 20px 0;
-  border-radius: 10px;
-}
-.menu button {
-  margin: 10px 10px;
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  padding: 15px 30px;
-}
-.menu a {
-  font-size: 17px;
-  color: black;
-  text-decoration: none;
-  font-weight: 600;
-}
-#red-button {
-  background-color: rgba(255, 0, 0, 0.799);
-}
-#red-button a {
-  color: white;
-}
-.blogs-menu {
-  display: grid;
-  grid-template-columns: 20% repeat(3, 1fr);
-}
-.blogs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.blog {
-  margin: 0 auto;
-  border: 1px solid lightgrey;
-  border-radius: 10px;
+/* media query starts */
+@media only screen and (max-width: 480px) {
+  .top-banner {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .top-banner-title {
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 16px;
+    width: 90%;
+    padding: 20px;
+    /* padding: 60px 40px 80px 80px; */
+  }
+  .top-banner-title h1 {
+    font-size: 25px;
+    font-weight: 600;
+    /* margin: 0 40px 0 0; */
+  }
+
+  .top-banner-image {
+    margin: auto;
+  }
+  .top-banner-image img {
+    /* width: 75%;
+    margin: 0 50px; */
+    width: 100%;
+    margin: 0 auto;
+    height: 150%;
+  }
 }
