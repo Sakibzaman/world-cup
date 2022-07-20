@@ -50,6 +50,7 @@ body {
 .blogs-menu {
   display: grid;
   grid-template-columns: 20% repeat(3, 1fr);
+  gap: 50px;
 }
 
 .menu {
