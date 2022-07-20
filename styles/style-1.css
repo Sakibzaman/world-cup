@@ -42,8 +42,9 @@ body {
   /* border: 2px solid red; */
 }
 .top-banner-image img {
-  height: 100%;
-  padding-left: 130px;
+  height: 85%;
+  margin-top: 98px;
+  /* padding-left: 130px; */
 }
 .blogs-menu {
   display: grid;
@@ -81,7 +82,7 @@ body {
 .blog-cards-container {
   margin-left: 50px;
   display: grid;
-  gap: 25px;
+  gap: 10px;
   grid-template-columns: repeat(3, 1fr);
 }
 .blog {
